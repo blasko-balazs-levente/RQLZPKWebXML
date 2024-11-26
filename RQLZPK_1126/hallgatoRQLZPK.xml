@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hallgatoRQLZPK.xsl"?>
+<class>
+    <student id = "01">
+        <vezeteknev>Blaskó</vezeteknev>
+        <keresztnev>Balázs</keresztnev>
+        <becenev>Bazsa</becenev>
+        <kor>21</kor>
+        <osztondij>20000</osztondij>
+    </student>
+    <student id = "02">
+        <vezeteknev>Borbély</vezeteknev>
+        <keresztnev>Ádám</keresztnev>
+        <becenev>Kapitány</becenev>
+        <kor>23</kor>
+        <osztondij>18000</osztondij>
+    </student>
+    <student id = "03">
+        <vezeteknev>Koubridis</vezeteknev>
+        <keresztnev>Michael</keresztnev>
+        <becenev>Mike</becenev>
+        <kor>21</kor>
+        <osztondij>19000</osztondij>
+    </student>
+</class>
