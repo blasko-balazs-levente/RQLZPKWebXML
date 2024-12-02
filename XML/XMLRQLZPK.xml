@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rendelo>
+    <!-- Az alábbiakban négy orvos adatai következnek -->
+    <Orvosok>
+        <Orvos id="O1">
+            <Nev>Dr. Kis László</Nev>
+            <Szakterulet>Kardiológia</Szakterulet>
+            <Elerhetoseg>
+                <Telefon>06/20 123 4567</Telefon>
+                <Email>kislaszlo@gmail.com</Email>
+            </Elerhetoseg>
+        </Orvos>
+        <Orvos id="O2">
+            <Nev>Dr. Kovács Péter</Nev>
+            <Szakterulet>Neurológia</Szakterulet>
+            <Elerhetoseg>
+                <Telefon>06/30 321 6547</Telefon>
+                <Email>kovacspeter@gmail.com</Email>
+            </Elerhetoseg>
+        </Orvos>
+        <Orvos id="O3">
+            <Nev>Dr. Szabó István</Nev>
+            <Szakterulet>Onkológia</Szakterulet>
+            <Elerhetoseg>
+                <Telefon>06/50 654 3231</Telefon>
+                <Email>szaboistvan@gmail.com</Email>
+            </Elerhetoseg>
+        </Orvos>
+        <Orvos id="O4">
+            <Nev>Dr. Lakatos András</Nev>
+            <Szakterulet>Ortopédia</Szakterulet>
+            <Elerhetoseg>
+                <Telefon>06/70 987 4561</Telefon>
+                <Email>lakatosandras@gmail.com</Email>
+            </Elerhetoseg>
+        </Orvos>
+    </Orvosok>
+
+    <!-- Az alábbiakban három páciens adatai következnek -->
+    <Paciensek>
+        <Paciens id="P1">
+            <Nev>Vörös Tibor</Nev>
+            <SzuletesiDatum>1991-01-01</SzuletesiDatum>
+            <Cim>
+                <Varos>Miskolc</Varos>
+                <Utca>Petőfi Sándor utca</Utca>
+                <Hazszam>1</Hazszam>
+            </Cim>
+            <Telefonszamok>
+                <Telefonszam>06/20 456 7817</Telefonszam>
+                <Telefonszam>06/30 456 7822</Telefonszam>
+            </Telefonszamok>
+        </Paciens>
+        <Paciens id="P2">
+            <Nev>Kovács Nándor</Nev>
+            <SzuletesiDatum>1992-01-01</SzuletesiDatum>
+            <Cim>
+                <Varos>Miskolc</Varos>
+                <Utca>Győri kapu</Utca>
+                <Hazszam>2</Hazszam>
+            </Cim>
+            <Telefonszamok>
+                <Telefonszam>06/20 456 7831</Telefonszam>
+            </Telefonszamok>
+        </Paciens>
+        <Paciens id="P3">
+            <Nev>Bence Károly</Nev>
+            <SzuletesiDatum>1993-01-01</SzuletesiDatum>
+            <Cim>
+                <Varos>Felsőzsolca</Varos>
+                <Utca>József Attila utca</Utca>
+                <Hazszam>3</Hazszam>
+            </Cim>
+            <Telefonszamok>
+                <Telefonszam>06/20 456 1785</Telefonszam>
+                <Telefonszam>06/70 456 2786</Telefonszam>
+            </Telefonszamok>
+        </Paciens>
+        <Paciens id="P4">
+            <Nev>Kertész Péter</Nev>
+            <SzuletesiDatum>1994-01-01</SzuletesiDatum>
+            <Cim>
+                <Varos>Szeged</Varos>
+                <Utca>Rákóczi utca</Utca>
+                <Hazszam>4</Hazszam>
+            </Cim>
+            <Telefonszamok>
+                <Telefonszam>06/70 456 7854</Telefonszam>
+                <Telefonszam>06/30 456 7865</Telefonszam>
+            </Telefonszamok>
+        </Paciens>
+    </Paciensek>
+
+    <!-- Az alábbiakban három vizsgálat adatai következnek -->
+    <Vizsgalatok>
+        <Vizsgalat id="V1">
+            <Tipus></Tipus>
+            <Datum>2025-01-15</Datum>
+            <Eredmeny></Eredmeny>
+            <Diagnózis></Diagnózis>
+        </Vizsgalat>
+        <Vizsgalat id="V2">
+            <Tipus></Tipus>
+            <Datum>2025-02-15</Datum>
+            <Eredmeny></Eredmeny>
+            <Diagnózis></Diagnózis>
+        </Vizsgalat>
+        <Vizsgalat id="V3">
+            <Tipus></Tipus>
+            <Datum>2025-03-15</Datum>
+            <Eredmeny></Eredmeny>
+            <Diagnózis></Diagnózis>
+        </Vizsgalat>
+        <Vizsgalat id="V4">
+            <Tipus></Tipus>
+            <Datum>2025-04-15</Datum>
+            <Eredmeny></Eredmeny>
+            <Diagnózis></Diagnózis>
+        </Vizsgalat>
+    </Vizsgalatok>
+</Rendelo>
