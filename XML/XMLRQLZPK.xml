@@ -2,43 +2,59 @@
 <Rendelo>
     <!-- Az alábbiakban négy orvos adatai következnek -->
     <Orvosok>
-        <Orvos id="O1">
-            <Nev>Dr. Kis László</Nev>
-            <Szakterulet>Kardiológia</Szakterulet>
-            <Elerhetoseg>
-                <Telefon>06/20 123 4567</Telefon>
-                <Email>kislaszlo@gmail.com</Email>
-            </Elerhetoseg>
-        </Orvos>
-        <Orvos id="O2">
-            <Nev>Dr. Kovács Péter</Nev>
-            <Szakterulet>Neurológia</Szakterulet>
-            <Elerhetoseg>
-                <Telefon>06/30 321 6547</Telefon>
-                <Email>kovacspeter@gmail.com</Email>
-            </Elerhetoseg>
-        </Orvos>
-        <Orvos id="O3">
-            <Nev>Dr. Szabó István</Nev>
-            <Szakterulet>Onkológia</Szakterulet>
-            <Elerhetoseg>
-                <Telefon>06/50 654 3231</Telefon>
-                <Email>szaboistvan@gmail.com</Email>
-            </Elerhetoseg>
-        </Orvos>
-        <Orvos id="O4">
-            <Nev>Dr. Lakatos András</Nev>
-            <Szakterulet>Ortopédia</Szakterulet>
-            <Elerhetoseg>
-                <Telefon>06/70 987 4561</Telefon>
-                <Email>lakatosandras@gmail.com</Email>
-            </Elerhetoseg>
-        </Orvos>
-    </Orvosok>
+    <Orvos OID="O1">
+        <Nev>Dr. Kis László</Nev>
+        <Szakterulet>Kardiológia</Szakterulet>
+        <Elerhetoseg>
+            <Telefon>06/20 123 4567</Telefon>
+            <Email>kislaszlo@gmail.com</Email>
+        </Elerhetoseg>
+        <Kezeles KID="P1">
+            <Kezdes>2025-01-01</Kezdes>
+            <Vege>2025-06-01</Vege>
+        </Kezeles>
+    </Orvos>
+    <Orvos OID="O2">
+        <Nev>Dr. Kovács Péter</Nev>
+        <Szakterulet>Neurológia</Szakterulet>
+        <Elerhetoseg>
+            <Telefon>06/30 321 6547</Telefon>
+            <Email>kovacspeter@gmail.com</Email>
+        </Elerhetoseg>
+        <Kezeles KID="P2">
+            <Kezdes>2025-02-01</Kezdes>
+            <Vege>2025-07-01</Vege>
+        </Kezeles>
+    </Orvos>
+    <Orvos OID="O3">
+        <Nev>Dr. Szabó István</Nev>
+        <Szakterulet>Onkológia</Szakterulet>
+        <Elerhetoseg>
+            <Telefon>06/50 654 3231</Telefon>
+            <Email>szaboistvan@gmail.com</Email>
+        </Elerhetoseg>
+        <Kezeles KID="P3">
+            <Kezdes>2025-03-01</Kezdes>
+            <Vege>2025-08-01</Vege>
+        </Kezeles>
+    </Orvos>
+    <Orvos OID="O4">
+        <Nev>Dr. Lakatos András</Nev>
+        <Szakterulet>Ortopédia</Szakterulet>
+        <Elerhetoseg>
+            <Telefon>06/70 987 4561</Telefon>
+            <Email>lakatosandras@gmail.com</Email>
+        </Elerhetoseg>
+        <Kezeles KID="P4">
+            <Kezdes>2025-04-01</Kezdes>
+            <Vege>2025-09-01</Vege>
+        </Kezeles>
+    </Orvos>
+</Orvosok>
 
-    <!-- Az alábbiakban három páciens adatai következnek -->
+    <!-- Az alábbiakban négy páciens adatai következnek -->
     <Paciensek>
-        <Paciens id="P1">
+        <Paciens PID="P1">
             <Nev>Vörös Tibor</Nev>
             <SzuletesiDatum>1991-01-01</SzuletesiDatum>
             <Cim>
@@ -51,7 +67,7 @@
                 <Telefonszam>06/30 456 7822</Telefonszam>
             </Telefonszamok>
         </Paciens>
-        <Paciens id="P2">
+        <Paciens PID="P2">
             <Nev>Kovács Nándor</Nev>
             <SzuletesiDatum>1992-01-01</SzuletesiDatum>
             <Cim>
@@ -63,7 +79,7 @@
                 <Telefonszam>06/20 456 7831</Telefonszam>
             </Telefonszamok>
         </Paciens>
-        <Paciens id="P3">
+        <Paciens PID="P3">
             <Nev>Bence Károly</Nev>
             <SzuletesiDatum>1993-01-01</SzuletesiDatum>
             <Cim>
@@ -76,7 +92,7 @@
                 <Telefonszam>06/70 456 2786</Telefonszam>
             </Telefonszamok>
         </Paciens>
-        <Paciens id="P4">
+        <Paciens PID="P4">
             <Nev>Kertész Péter</Nev>
             <SzuletesiDatum>1994-01-01</SzuletesiDatum>
             <Cim>
@@ -91,31 +107,87 @@
         </Paciens>
     </Paciensek>
 
-    <!-- Az alábbiakban három vizsgálat adatai következnek -->
+    <!-- Az alábbiakban négy vizsgálat adatai következnek -->
     <Vizsgalatok>
-        <Vizsgalat id="V1">
-            <Tipus></Tipus>
-            <Datum>2025-01-15</Datum>
-            <Eredmeny></Eredmeny>
-            <Diagnózis></Diagnózis>
-        </Vizsgalat>
-        <Vizsgalat id="V2">
-            <Tipus></Tipus>
-            <Datum>2025-02-15</Datum>
-            <Eredmeny></Eredmeny>
-            <Diagnózis></Diagnózis>
-        </Vizsgalat>
-        <Vizsgalat id="V3">
-            <Tipus></Tipus>
-            <Datum>2025-03-15</Datum>
-            <Eredmeny></Eredmeny>
-            <Diagnózis></Diagnózis>
-        </Vizsgalat>
-        <Vizsgalat id="V4">
-            <Tipus></Tipus>
-            <Datum>2025-04-15</Datum>
-            <Eredmeny></Eredmeny>
-            <Diagnózis></Diagnózis>
-        </Vizsgalat>
-    </Vizsgalatok>
+    <Vizsgalat VID="V1">
+        <Tipus>Laborvizsgálat</Tipus>
+        <Datum>2025-01-15</Datum>
+        <Diagnozis>Vérkép elemzés</Diagnozis>
+    </Vizsgalat>
+    <Vizsgalat VID="V2">
+        <Tipus>Röntgenvizsgálat</Tipus>
+        <Datum>2025-02-15</Datum>
+        <Diagnozis>Mellkas röntgen</Diagnozis>
+    </Vizsgalat>
+    <Vizsgalat VID="V3">
+        <Tipus>Ultrahang vizsgálat</Tipus>
+        <Datum>2025-03-15</Datum>
+        <Diagnozis>Hasüreg ultrahang</Diagnozis>
+    </Vizsgalat>
+    <Vizsgalat VID="V4">
+        <Tipus>Kardiológiai vizsgálat</Tipus>
+        <Datum>2025-04-15</Datum>
+        <Diagnozis>Ekg vizsgálat</Diagnozis>
+    </Vizsgalat>
+</Vizsgalatok>
+
+
+    <!-- Az alábbiakban négy időpont adatai következnek -->
+    <Idopontok>
+    <Idopont IID="I1">
+        <Helyszin>MÁV Rendelőintézet</Helyszin>
+        <Datum>2024-12-10</Datum>
+        <Ido>09:00</Ido>
+    </Idopont>
+    <Idopont IID="I2">
+        <Helyszin>BAZ Vármegyei Központi Kórház</Helyszin>
+        <Datum>2024-12-12</Datum>
+        <Ido>10:30</Ido>
+    </Idopont>
+    <Idopont IID="I3">
+        <Helyszin>MÁV Rendelőintézet</Helyszin>
+        <Datum>2024-12-15</Datum>
+        <Ido>14:00</Ido>
+    </Idopont>
+    <Idopont IID="I4">
+        <Helyszin>BAZ Vármegyei Központi Kórház</Helyszin>
+        <Datum>2024-12-18</Datum>
+        <Ido>11:45</Ido>
+    </Idopont>
+</Idopontok>
+
+
+    <!-- Az alábbiakban négy gyógyszer adatai következnek -->
+    <Gyogyszerek>
+    <Gyogyszer GID="G1">
+        <Nev>Ibuprofen</Nev>
+        <Adagolas>200-400 mg naponta 3-4 alkalommal</Adagolas>
+        <Leiras>Az ibuprofen egy nem szteroid gyulladáscsökkentő gyógyszer (NSAID), amelyet fájdalom és gyulladás csökkentésére használnak.</Leiras>
+        <Mellekhatasok>Fejfájás, szédülés, gyomorpanaszok, hányinger</Mellekhatasok>
+    </Gyogyszer>
+    <Gyogyszer GID="G2">
+        <Nev>Aspirin</Nev>
+        <Adagolas>75-100 mg naponta egyszer</Adagolas>
+        <Leiras>Az aszpirin egy nem szteroid gyulladáscsökkentő gyógyszer, amelyet főként a szív- és érrendszeri betegségek megelőzésére és kezelésére használnak.</Leiras>
+        <Mellekhatasok>Gyomorirritáció, hányinger, vérzés</Mellekhatasok>
+        <Mellekhatasok>Allergiás reakciók, bőrkiütés</Mellekhatasok>
+    </Gyogyszer>
+    <Gyogyszer GID="G3">
+        <Nev>Paracetamol</Nev>
+        <Adagolas>500-1000 mg naponta 3-4 alkalommal, maximum 4000 mg/nap</Adagolas>
+        <Leiras>Paracetamol egy fájdalomcsillapító és lázcsillapító szer, amelyet enyhe és közepes erősségű fájdalom kezelésére használnak.</Leiras>
+        <Mellekhatasok>Szédülés, hányinger, bélpanaszok</Mellekhatasok>
+        <Mellekhatasok>Allergiás reakciók, kiütések</Mellekhatasok>
+        <Mellekhatasok>Májműködési zavarok (túladagolás esetén)</Mellekhatasok>
+    </Gyogyszer>
+    <Gyogyszer GID="G4">
+        <Nev>Amoxicillin</Nev>
+        <Adagolas>250-500 mg 8 óránként</Adagolas>
+        <Leiras>Az amoxicillin egy széles spektrumú antibiotikum, amelyet bakteriális fertőzések kezelésére használnak.</Leiras>
+        <Mellekhatasok>Hasmenés, hányinger, bélflóra felborulás</Mellekhatasok>
+        <Mellekhatasok>Allergiás reakciók, bőrkiütés</Mellekhatasok>
+        <Mellekhatasok>Gombás fertőzések (pl. szájpenész)</Mellekhatasok>
+        <Mellekhatasok>Vérképzőszervi elváltozások, mint pl. leukopenia</Mellekhatasok>
+    </Gyogyszer>
+</Gyogyszerek>
 </Rendelo>
