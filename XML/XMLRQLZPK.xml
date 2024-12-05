@@ -6,7 +6,7 @@
         <Nev>Dr. Kis László</Nev>
         <Szakterulet>Kardiológia</Szakterulet>
         <Elerhetoseg>
-            <Telefon>06/20 123 4567</Telefon>
+            <Telefon>06201234567</Telefon>
             <Email>kislaszlo@gmail.com</Email>
         </Elerhetoseg>
         <Kezeles KID="01">
@@ -18,7 +18,7 @@
         <Nev>Dr. Kovács Péter</Nev>
         <Szakterulet>Neurológia</Szakterulet>
         <Elerhetoseg>
-            <Telefon>06/30 321 6547</Telefon>
+            <Telefon>06303216547</Telefon>
             <Email>kovacspeter@gmail.com</Email>
         </Elerhetoseg>
         <Kezeles KID="02">
@@ -30,7 +30,7 @@
         <Nev>Dr. Szabó István</Nev>
         <Szakterulet>Onkológia</Szakterulet>
         <Elerhetoseg>
-            <Telefon>06/50 654 3231</Telefon>
+            <Telefon>06506543231</Telefon>
             <Email>szaboistvan@gmail.com</Email>
         </Elerhetoseg>
         <Kezeles KID="03">
@@ -42,7 +42,7 @@
         <Nev>Dr. Lakatos András</Nev>
         <Szakterulet>Ortopédia</Szakterulet>
         <Elerhetoseg>
-            <Telefon>06/70 987 4561</Telefon>
+            <Telefon>06709874561</Telefon>
             <Email>lakatosandras@gmail.com</Email>
         </Elerhetoseg>
         <Kezeles KID="04">
@@ -63,8 +63,8 @@
                 <Hazszam>1</Hazszam>
             </Cim>
             <Telefonszamok>
-                <Telefonszam>06/20 456 7817</Telefonszam>
-                <Telefonszam>06/30 456 7822</Telefonszam>
+                <Telefonszam>06204567817</Telefonszam>
+                <Telefonszam>06304567822</Telefonszam>
             </Telefonszamok>
         </Paciens>
         <Paciens PID="02">
@@ -76,7 +76,7 @@
                 <Hazszam>2</Hazszam>
             </Cim>
             <Telefonszamok>
-                <Telefonszam>06/20 456 7831</Telefonszam>
+                <Telefonszam>06204567831</Telefonszam>
             </Telefonszamok>
         </Paciens>
         <Paciens PID="03">
@@ -88,8 +88,8 @@
                 <Hazszam>3</Hazszam>
             </Cim>
             <Telefonszamok>
-                <Telefonszam>06/20 456 1785</Telefonszam>
-                <Telefonszam>06/70 456 2786</Telefonszam>
+                <Telefonszam>06204561785</Telefonszam>
+                <Telefonszam>06704562786</Telefonszam>
             </Telefonszamok>
         </Paciens>
         <Paciens PID="04">
@@ -101,8 +101,8 @@
                 <Hazszam>4</Hazszam>
             </Cim>
             <Telefonszamok>
-                <Telefonszam>06/70 456 7854</Telefonszam>
-                <Telefonszam>06/30 456 7865</Telefonszam>
+                <Telefonszam>06704567854</Telefonszam>
+                <Telefonszam>06304567865</Telefonszam>
             </Telefonszamok>
         </Paciens>
     </Paciensek>
