@@ -6,7 +6,7 @@
         <Nev>Dr. Kis László</Nev>
         <Szakterulet>Kardiológia</Szakterulet>
         <Elerhetoseg>
-            <Telefon>06201234567</Telefon>
+            <Telefon>+36/20 123 4567</Telefon>
             <Email>kislaszlo@gmail.com</Email>
         </Elerhetoseg>
         <Kezeles KID="01">
@@ -18,7 +18,7 @@
         <Nev>Dr. Kovács Péter</Nev>
         <Szakterulet>Neurológia</Szakterulet>
         <Elerhetoseg>
-            <Telefon>06303216547</Telefon>
+            <Telefon>+36/30 321 6547</Telefon>
             <Email>kovacspeter@gmail.com</Email>
         </Elerhetoseg>
         <Kezeles KID="02">
@@ -30,7 +30,7 @@
         <Nev>Dr. Szabó István</Nev>
         <Szakterulet>Onkológia</Szakterulet>
         <Elerhetoseg>
-            <Telefon>06506543231</Telefon>
+            <Telefon>+36/50 654 3231</Telefon>
             <Email>szaboistvan@gmail.com</Email>
         </Elerhetoseg>
         <Kezeles KID="03">
@@ -42,7 +42,7 @@
         <Nev>Dr. Lakatos András</Nev>
         <Szakterulet>Ortopédia</Szakterulet>
         <Elerhetoseg>
-            <Telefon>06709874561</Telefon>
+            <Telefon>+36/70 987 4561</Telefon>
             <Email>lakatosandras@gmail.com</Email>
         </Elerhetoseg>
         <Kezeles KID="04">
@@ -63,8 +63,8 @@
                 <Hazszam>1</Hazszam>
             </Cim>
             <Telefonszamok>
-                <Telefonszam>06204567817</Telefonszam>
-                <Telefonszam>06304567822</Telefonszam>
+                <Telefonszam>+36/20 456 7817</Telefonszam>
+                <Telefonszam>+36/30 456 7822</Telefonszam>
             </Telefonszamok>
         </Paciens>
         <Paciens PID="02">
@@ -76,7 +76,7 @@
                 <Hazszam>2</Hazszam>
             </Cim>
             <Telefonszamok>
-                <Telefonszam>06204567831</Telefonszam>
+                <Telefonszam>+36/20 456 7831</Telefonszam>
             </Telefonszamok>
         </Paciens>
         <Paciens PID="03">
@@ -88,8 +88,8 @@
                 <Hazszam>3</Hazszam>
             </Cim>
             <Telefonszamok>
-                <Telefonszam>06204561785</Telefonszam>
-                <Telefonszam>06704562786</Telefonszam>
+                <Telefonszam>+36/20 456 1785</Telefonszam>
+                <Telefonszam>+36/70 456 2786</Telefonszam>
             </Telefonszamok>
         </Paciens>
         <Paciens PID="04">
@@ -101,8 +101,8 @@
                 <Hazszam>4</Hazszam>
             </Cim>
             <Telefonszamok>
-                <Telefonszam>06704567854</Telefonszam>
-                <Telefonszam>06304567865</Telefonszam>
+                <Telefonszam>+36/70 456 7854</Telefonszam>
+                <Telefonszam>+36/30 456 7865</Telefonszam>
             </Telefonszamok>
         </Paciens>
     </Paciensek>
@@ -163,31 +163,39 @@
         <Nev>Ibuprofen</Nev>
         <Adagolas>200-400 mg naponta 3-4 alkalommal</Adagolas>
         <Leiras>Az ibuprofen egy nem szteroid gyulladáscsökkentő gyógyszer (NSAID), amelyet fájdalom és gyulladás csökkentésére használnak.</Leiras>
-        <Mellekhatasok>Fejfájás, szédülés, gyomorpanaszok, hányinger</Mellekhatasok>
+        <Mellekhatasok>
+            <Mellekhatas>Fejfájás, szédülés, gyomorpanaszok, hányinger</Mellekhatas>
+        </Mellekhatasok>
     </Gyogyszer>
     <Gyogyszer GID="02">
         <Nev>Aspirin</Nev>
         <Adagolas>75-100 mg naponta egyszer</Adagolas>
         <Leiras>Az aszpirin egy nem szteroid gyulladáscsökkentő gyógyszer, amelyet főként a szív- és érrendszeri betegségek megelőzésére és kezelésére használnak.</Leiras>
-        <Mellekhatasok>Gyomorirritáció, hányinger, vérzés</Mellekhatasok>
-        <Mellekhatasok>Allergiás reakciók, bőrkiütés</Mellekhatasok>
+        <Mellekhatasok>
+            <Mellekhatas>Gyomorirritáció, hányinger, vérzés</Mellekhatas>
+            <Mellekhatas>Allergiás reakciók, bőrkiütés</Mellekhatas>
+        </Mellekhatasok>
     </Gyogyszer>
     <Gyogyszer GID="03">
         <Nev>Paracetamol</Nev>
         <Adagolas>500-1000 mg naponta 3-4 alkalommal, maximum 4000 mg/nap</Adagolas>
         <Leiras>Paracetamol egy fájdalomcsillapító és lázcsillapító szer, amelyet enyhe és közepes erősségű fájdalom kezelésére használnak.</Leiras>
-        <Mellekhatasok>Szédülés, hányinger, bélpanaszok</Mellekhatasok>
-        <Mellekhatasok>Allergiás reakciók, kiütések</Mellekhatasok>
-        <Mellekhatasok>Májműködési zavarok (túladagolás esetén)</Mellekhatasok>
+        <Mellekhatasok>
+            <Mellekhatas>Szédülés, hányinger, bélpanaszok</Mellekhatas>
+            <Mellekhatas>Allergiás reakciók, kiütések</Mellekhatas>
+            <Mellekhatas>Májműködési zavarok (túladagolás esetén)</Mellekhatas>
+        </Mellekhatasok>
     </Gyogyszer>
     <Gyogyszer GID="04">
         <Nev>Amoxicillin</Nev>
         <Adagolas>250-500 mg 8 óránként</Adagolas>
         <Leiras>Az amoxicillin egy széles spektrumú antibiotikum, amelyet bakteriális fertőzések kezelésére használnak.</Leiras>
-        <Mellekhatasok>Hasmenés, hányinger, bélflóra felborulás</Mellekhatasok>
-        <Mellekhatasok>Allergiás reakciók, bőrkiütés</Mellekhatasok>
-        <Mellekhatasok>Gombás fertőzések (pl. szájpenész)</Mellekhatasok>
-        <Mellekhatasok>Vérképzőszervi elváltozások, mint pl. leukopenia</Mellekhatasok>
+        <Mellekhatasok>
+            <Mellekhatas>Hasmenés, hányinger, bélflóra felborulás</Mellekhatas>
+            <Mellekhatas>Allergiás reakciók, bőrkiütés</Mellekhatas>
+            <Mellekhatas>Gombás fertőzések (pl. szájpenész)</Mellekhatas>
+            <Mellekhatas>Vérképzőszervi elváltozások, mint pl. leukopenia</Mellekhatas>
+        </Mellekhatasok>
     </Gyogyszer>
 </Gyogyszerek>
 </Rendelo>
