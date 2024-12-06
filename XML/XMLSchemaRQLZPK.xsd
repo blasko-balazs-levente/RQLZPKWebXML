@@ -15,17 +15,18 @@
                                         <xs:element name="Elerhetoseg">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="Telefon" type="xs:int"/>
+                                                    <xs:element name="Telefon" type="PhoneNumber"/>
                                                     <xs:element name="Email" type="xs:string"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="Kezeles">
+                                        <xs:element name="Kezeles" maxOccurs="unbounded">
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="Kezdes" type="xs:date"/>
                                                     <xs:element name="Vege" type="xs:date"/>
                                                 </xs:sequence>
+                                                <xs:attribute name="KID" type="xs:int" use="required"/>
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
@@ -56,7 +57,7 @@
                                         <xs:element name="Telefonszamok">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="Telefonszam" type="xs:int" maxOccurs="unbounded"/>
+                                                    <xs:element name="Telefonszam" type="PhoneNumber" maxOccurs="unbounded"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
@@ -93,7 +94,7 @@
                                     <xs:sequence>
                                         <xs:element name="Helyszin" type="xs:string"/>
                                         <xs:element name="Datum" type="xs:date"/>
-                                        <xs:element name="Ido" type="xs:string"/>
+                                        <xs:element name="Ido" type="Appointment"/>
                                     </xs:sequence>
                                     <xs:attribute name="IID" type="xs:int" use="required"/>
                                 </xs:complexType>
@@ -148,12 +149,22 @@
             <xs:field xpath="@GID"/>
         </xs:key>
         <xs:key name="Kezeles_key">
-            <xs:selector xpath="Kezeles">
-            <xs:field xpath="@KID">
+            <xs:selector xpath="Kezeles"/>
+            <xs:field xpath="@KID"/>
         </xs:key>
         <xs:keyref name="FK_Kezeles_Paciens" refer="Paciens_key">
             <xs:selector xpath="Kezeles"/>
             <xs:field xpath="@PID"/>
         </xs:keyref>
     </xs:element>
+<xs:simpleType name="PhoneNumber">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\+36/\d{2} \d{3} \d{4}"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="Appointment">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\d{2}:\d{2}"/>
+    </xs:restriction>
+</xs:simpleType>
 </xs:schema>
