@@ -1,0 +1,142 @@
+Orvosok
+Orvos
+    Azonosító: OID = 01
+    Nev: Dr. Kis László
+    Szakterulet: Kardiológia
+    Elerhetoseg: +36/20 123 4567
+            kislaszlo@gmail.com
+    Kezeles: 2025-01-01
+            2025-06-01
+Orvos
+    Azonosító: OID = 02
+    Nev: Dr. Kovács Péter
+    Szakterulet: Neurológia
+    Elerhetoseg: +36/30 321 6547
+            kovacspeter@gmail.com
+    Kezeles: 2025-02-01
+            2025-07-01
+Orvos
+    Azonosító: OID = 03
+    Nev: Dr. Szabó István
+    Szakterulet: Onkológia
+    Elerhetoseg: +36/50 654 3231
+            szaboistvan@gmail.com
+    Kezeles: 2025-03-01
+            2025-08-01
+Orvos
+    Azonosító: OID = 04
+    Nev: Dr. Lakatos András
+    Szakterulet: Ortopédia
+    Elerhetoseg: +36/70 987 4561
+            lakatosandras@gmail.com
+    Kezeles: 2025-04-01
+            2025-09-01
+Paciensek
+Paciens
+    Azonosító: PID = 01
+    Nev: Vörös Tibor
+    SzuletesiDatum: 1991-01-01
+    Cim: Miskolc
+                Petőfi Sándor utca
+                1
+    Telefonszamok: +36/20 456 7817
+                +36/30 456 7822
+Paciens
+    Azonosító: PID = 02
+    Nev: Kovács Nándor
+    SzuletesiDatum: 1992-01-01
+    Cim: Miskolc
+                Győri kapu
+                2
+    Telefonszamok: +36/20 456 7831
+Paciens
+    Azonosító: PID = 03
+    Nev: Bence Károly
+    SzuletesiDatum: 1993-01-01
+    Cim: Felsőzsolca
+                József Attila utca
+                3
+    Telefonszamok: +36/20 456 1785
+                +36/70 456 2786
+Paciens
+    Azonosító: PID = 04
+    Nev: Kertész Péter
+    SzuletesiDatum: 1994-01-01
+    Cim: Szeged
+                Rákóczi utca
+                4
+    Telefonszamok: +36/70 456 7854
+                +36/30 456 7865
+Vizsgalatok
+Vizsgalat
+    Azonosító: VID = 01
+    Tipus: Laborvizsgálat
+    Datum: 2025-01-15
+    Diagnozis: Vérkép elemzés
+Vizsgalat
+    Azonosító: VID = 02
+    Tipus: Röntgenvizsgálat
+    Datum: 2025-02-15
+    Diagnozis: Mellkas röntgen
+Vizsgalat
+    Azonosító: VID = 03
+    Tipus: Ultrahang vizsgálat
+    Datum: 2025-03-15
+    Diagnozis: Hasüreg ultrahang
+Vizsgalat
+    Azonosító: VID = 04
+    Tipus: Kardiológiai vizsgálat
+    Datum: 2025-04-15
+    Diagnozis: Ekg vizsgálat
+Idopontok
+Idopont
+    Azonosító: IID = 01
+    Helyszin: MÁV Rendelőintézet
+    Datum: 2024-12-10
+    Ido: 09:00
+Idopont
+    Azonosító: IID = 02
+    Helyszin: BAZ Vármegyei Központi Kórház
+    Datum: 2024-12-12
+    Ido: 10:30
+Idopont
+    Azonosító: IID = 03
+    Helyszin: MÁV Rendelőintézet
+    Datum: 2024-12-15
+    Ido: 14:00
+Idopont
+    Azonosító: IID = 04
+    Helyszin: BAZ Vármegyei Központi Kórház
+    Datum: 2024-12-18
+    Ido: 11:45
+Gyogyszerek
+Gyogyszer
+    Azonosító: GID = 01
+    Nev: Ibuprofen
+    Adagolas: 200-400 mg naponta 3-4 alkalommal
+    Leiras: Az ibuprofen egy nem szteroid gyulladáscsökkentő gyógyszer (NSAID), amelyet fájdalom és gyulladás csökkentésére használnak.
+    Mellekhatasok: Fejfájás, szédülés, gyomorpanaszok, hányinger
+Gyogyszer
+    Azonosító: GID = 02
+    Nev: Aspirin
+    Adagolas: 75-100 mg naponta egyszer
+    Leiras: Az aszpirin egy nem szteroid gyulladáscsökkentő gyógyszer, amelyet főként a szív- és érrendszeri betegségek megelőzésére és kezelésére használnak.
+    Mellekhatasok: Gyomorirritáció, hányinger, vérzés
+            Allergiás reakciók, bőrkiütés
+Gyogyszer
+    Azonosító: GID = 03
+    Nev: Paracetamol
+    Adagolas: 500-1000 mg naponta 3-4 alkalommal, maximum 4000 mg/nap
+    Leiras: Paracetamol egy fájdalomcsillapító és lázcsillapító szer, amelyet enyhe és közepes erősségű fájdalom kezelésére használnak.
+    Mellekhatasok: Szédülés, hányinger, bélpanaszok
+            Allergiás reakciók, kiütések
+            Májműködési zavarok (túladagolás esetén)
+Gyogyszer
+    Azonosító: GID = 04
+    Nev: Amoxicillin
+    Adagolas: 250-500 mg 8 óránként
+    Leiras: Az amoxicillin egy széles spektrumú antibiotikum, amelyet bakteriális fertőzések kezelésére használnak.
+    Mellekhatasok: Hasmenés, hányinger, bélflóra felborulás
+            Allergiás reakciók, bőrkiütés
+            Gombás fertőzések (pl. szájpenész)
+            Vérképzőszervi elváltozások, mint pl. leukopenia
