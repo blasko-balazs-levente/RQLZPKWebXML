@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BB_orarend>
+    <ora id="01" tipus="gyak">
+        <targy>Angol</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>A1 326</helyszin>
+        <oktato>asd</oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+    <ora id="02" tipus="gyak">
+        <targy>XML</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>16</tol>
+            <ig>18</ig>
+        </idopont>
+        <helyszin>In.102</helyszin>
+        <oktato>De.Bednarik László</oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+    <ora id="03" tipus="gyak">
+        <targy>Windows rendszergazda</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin><In 103></In></helyszin>
+        <oktato>De.Wagner György</oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+    <ora id="04" tipus="elo">
+        <targy>XML</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>In.102</helyszin>
+        <oktato>De.Kovács László</oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+</BB_orarend>

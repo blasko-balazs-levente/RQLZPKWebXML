@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<konferencia>
+    <cim>Megbeszélés</cim>
+    <eloado>
+        <nev>Simon Péter</nev>
+        <adoszam>123345</adoszam>
+        <lakcim>3532, Miskolc Petőfi János u. 1.</lakcim>
+    </eloado>
+    <datum>2024-12-08</datum>
+    <helyszin>Tárgyaló I.</helyszin>
+    <hallgatok>
+        <hallgato>
+            <nev>asd qwe</nev>
+            <lakcim>asdasdasd</lakcim>
+        </hallgato>
+        <hallgato>
+            <nev>qwe asd</nev>
+            <lakcim>qweqweqwe</lakcim>
+        </hallgato>
+    </hallgatok>
+</konferencia>
