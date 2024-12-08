@@ -1,0 +1,24 @@
+<!ELEMENT RQLZPK_kurzusfelvetel (hallgato, kurzusok)>
+<!ELEMENT hallgato (hnev+, szulev+, szak+)>
+<!ELEMENT hnev (#PCDATA)>
+<!ELEMENT szulev (#PCDATA)>
+<!ELEMENT szak (#PCDATA)>
+<!ELEMENT kurzusok (kurzus*)>
+<!ELEMENT kurzus (kurzusnev+, kredit+, hely+, oraado?, idopont+, oktato?)>
+<!ELEMENT kurzusnev (#PCDATA)>
+<!ELEMENT kredit (#PCDATA)>
+<!ELEMENT hely (#PCDATA)>
+<!ELEMENT oraado (#PCDATA)>
+<!ELEMENT idopont (#PCDATA)>
+<!ELEMENT oktato (#PCDATA)>
+
+<!ATTLIST RQLZPK_kurzusfelvetel tanev CDATA #REQUIRED>
+<!ATTLIST RQLZPK_kurzusfelvetel egyetem CDATA #REQUIRED>
+<!ATTLIST szak evf CDATA #REQUIRED>
+<!ATTLIST kurzus id CDATA #REQUIRED>
+<!ATTLIST kurzusnev id CDATA #REQUIRED>
+<!ATTLIST kurzusnev jovahagyas (igen | nem) #REQUIRED>
+<!ATTLIST kurzusnev nyelv CDATA #REQUIRED>
+<!ATTLIST oktato id CDATA #REQUIRED>
+<!ATTLIST oktato jovahagyas (igen | nem) "nem">
+<!ATTLIST oktato nyelv CDATA #REQUIRED>
