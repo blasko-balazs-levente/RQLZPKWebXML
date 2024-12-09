@@ -12,7 +12,7 @@ public class DOMWrite1 {
     public static void main(String[] args) {
         try {
             // 1. XML fájl betöltése
-            File inputFile = new File("orarendRQLZPK.xml");
+            File inputFile = new File("RQLZPK_orarend.xml");
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document doc = builder.parse(inputFile);
