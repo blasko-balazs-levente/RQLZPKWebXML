@@ -15,7 +15,7 @@ public class DOMRead1 {
     public static void main(String[] args) {
         try {
             // XML fájl betöltése
-            File xmlFile = new File("orarendRQLZPK.xml"); // Cseréld ki a fájl elérési útját, ha szükséges
+            File xmlFile = new File("RQLZPK_orarend.xml"); // Cseréld ki a fájl elérési útját, ha szükséges
 
             // DocumentBuilderFactory és DocumentBuilder objektum létrehozása
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
