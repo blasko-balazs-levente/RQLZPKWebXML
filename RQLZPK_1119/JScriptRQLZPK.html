@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RQLZPK</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      .schedule {
+        margin-top: 20px;
+      }
+      .schedule-item {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background: #f9f9f9;
+      }
+      .field {
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+  <h1>RQLZPK Órarend</h1>
+  <div id="orarend" class="schedule"></div>
+</body>
+
+<script>
+  function renderOrarend() {
+    const container = document.getElementById("orarend");
+    const orak = orarend.BB_orarend.ora;
+
+    orak.forEach((ora) => {
+      const oraElem = document.createElement("div");
+      oraElem.classList.add("schedule-item");
+
+      const fields = `
+                <p><span class="field">Tárgy:</span> ${ora.targy}</p>
+                <p><span class="field">Nap:</span> ${ora.idopont.nap}</p>
+                <p><span class="field">Időpont:</span> ${ora.idopont.tol} - ${ora.idopont.ig}</p>
+                <p><span class="field">Helyszín:</span> ${ora.helyszin}</p>
+                <p><span class="field">Oktató:</span> ${ora.oktato}</p>
+                <p><span class="field">Szak:</span> ${ora.szak}</p>
+      `;
+      oraElem.innerHTML = fields;
+      container.appendChild(oraElem);
+    })
+  }
+
+   const orarend = {
+                      BB_orarend: {
+                        ora: [
+                          {
+                            targy: "Elektrotechnika és elektronika",
+                            idopont: {
+                              nap: "Hétfő",
+                              tol: "8:00",
+                              ig: "10:00"
+                            },
+                            helyszin: "A2/III. Előadó",
+                            oktato: "Szabó Nórbert",
+                            szak: "Mérnökinformatika BSc"
+                          },
+                          {
+                            targy: "Webtechnológia I",
+                            idopont: {
+                              nap: "Hétfő",
+                              tol: "10:00",
+                              ig: "12:00"
+                            },
+                            helyszin: "A2/I. Előadó",
+                            oktato: "Agárdi Anita",
+                            szak: "Mérnökinformatika BSc"
+                          },
+                          {
+                            targy: "Angol szaknyelv",
+                            idopont: {
+                              nap: "Hétfő",
+                              tol: "12:00",
+                              ig: "14:00"
+                            },
+                            helyszin: "A1/314",
+                            oktato: "Vitányiné Varga Erika",
+                            szak: "Mérnökinformatika BSc"
+                          },
+                          {
+                            targy: "Webtechnológia I",
+                            idopont: {
+                              nap: "Hétfő",
+                              tol: "14:00",
+                              ig: "16:00"
+                            },
+                            helyszin: "Inf/101",
+                            oktato: "Agárdi Anita",
+                            szak: "Mérnökinformatika BSc"
+                          },
+                          {
+                            targy: "Mobilprogramozás alapjai",
+                            idopont: {
+                              nap: "Hétfő",
+                              tol: "16:00",
+                              ig: "18:00"
+                            },
+                            helyszin: "Inf/101",
+                            oktato: "Agárdi Anita",
+                            szak: "Mérnökinformatika BSc"
+                          },
+                          {
+                            targy: "Mobilprogramozás alapjai",
+                            idopont: {
+                              nap: "Hétfő",
+                              tol: "18:00",
+                              ig: "20:00"
+                            },
+                            helyszin: "Inf/101",
+                            oktato: "Agárdi Anita",
+                            szak: "Mérnökinformatika BSc"
+                          },
+                          {
+                            targy: "Windows rendszergazda",
+                            idopont: {
+                              nap: "Kedd",
+                              tol: "8:00",
+                              ig: "10:00"
+                            },
+                            helyszin: "Inf/103",
+                            oktato: "Wagner György",
+                            szak: "Mérnökinformatika BSc"
+                          },
+                          {
+                            targy: "Webes adatkezelő környezetek",
+                            idopont: {
+                              nap: "Kedd",
+                              tol: "12:00",
+                              ig: "14:00"
+                            },
+                            helyszin: "Inf/101",
+                            oktato: "Dr Bednarik László",
+                            szak: "Mérnökinformatika BSc"
+                          },
+                          {
+                            targy: "Elektrotechnika és elektronika",
+                            idopont: {
+                              nap: "Szerda",
+                              tol: "8:00",
+                              ig: "10:00"
+                            },
+                            helyszin: "A1/310",
+                            oktato: "Szabó Norbert",
+                            szak: "Mérnökinformatika BSc"
+                          },
+                          {
+                            targy: "Mesterséges intelinegcia",
+                            idopont: {
+                              nap: "Szerda",
+                              tol: "10:00",
+                              ig: "12:00"
+                            },
+                            helyszin: "A1/218",
+                            oktato: "Fazekas Levente",
+                            szak: "Mérnökinformatika BSc"
+                          },
+                          {
+                            targy: "Windows rendszergazda",
+                            idopont: {
+                              nap: "Szerda",
+                              tol: "12:00",
+                              ig: "14:00"
+                            },
+                            helyszin: "Inf/101",
+                            oktato: "Wagner György",
+                            szak: "Mérnökinformatika BSc"
+                          },
+                          {
+                            targy: "Webes adatkezelő környezetek",
+                            idopont: {
+                              nap: "Szerda",
+                              tol: "14:00",
+                              ig: "16:00"
+                            },
+                            helyszin: "Inf/102",
+                            oktato: "Dr Kovács László",
+                            szak: "Mérnökinformatika BSc"
+                          },
+                          {
+                            targy: "Mesterséges intelinegcia",
+                            idopont: {
+                              nap: "Szerda",
+                              tol: "16:00",
+                              ig: "18:00"
+                            },
+                            helyszin: "A1/XXXII előadó",
+                            oktato: "Kunné Dr. Tamás Judit",
+                            szak: "Mérnökinformatika BSc"
+                          }
+                        ]
+                      }
+                    }
+
+    renderOrarend(orarend);
+    </script>
+</html>
