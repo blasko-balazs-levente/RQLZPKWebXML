@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Rendelo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaRQLZPK.xsd">
+        
+    <!-- Az alábbiakban négy orvos adatai következnek -->
+        
+    <Orvosok>
+            
+        <Orvos OID="01">
+                    
+            <Nev>Dr. Kis László</Nev>
+                    
+            <Szakterulet>Kardiológia</Szakterulet>
+                    
+            <Elerhetoseg>
+                            
+                <Telefon>+36/20 123 4567</Telefon>
+                            
+                <Email>kislaszlo@gmail.com</Email>
+                        
+            </Elerhetoseg>
+                    
+            <Kezeles KID="01">
+                            
+                <Kezdes>2025-01-01</Kezdes>
+                            
+                <Vege>2025-06-01</Vege>
+                        
+            </Kezeles>
+                
+        </Orvos>
+            
+        <Orvos OID="02">
+                    
+            <Nev>Dr. Kovács Péter</Nev>
+                    
+            <Szakterulet>Neurológia</Szakterulet>
+                    
+            <Elerhetoseg>
+                            
+                <Telefon>+36/30 321 6547</Telefon>
+                            
+                <Email>kovacspeter@gmail.com</Email>
+                        
+            </Elerhetoseg>
+                    
+            <Kezeles KID="02">
+                            
+                <Kezdes>2025-02-01</Kezdes>
+                            
+                <Vege>2025-07-01</Vege>
+                        
+            </Kezeles>
+                
+        </Orvos>
+            
+        <Orvos OID="03">
+                    
+            <Nev>Dr. Szabó István</Nev>
+                    
+            <Szakterulet>Radiológia</Szakterulet>
+                    
+            <Elerhetoseg>
+                            
+                <Telefon>+36/50 654 3231</Telefon>
+                            
+                <Email>szaboistvan@gmail.com</Email>
+                        
+            </Elerhetoseg>
+                    
+            <Kezeles KID="03">
+                            
+                <Kezdes>2025-03-01</Kezdes>
+                            
+                <Vege>2025-08-01</Vege>
+                        
+            </Kezeles>
+                
+        </Orvos>
+            
+        <Orvos OID="04">
+                    
+            <Nev>Dr. Lakatos András</Nev>
+                    
+            <Szakterulet>Ortopédia</Szakterulet>
+                    
+            <Elerhetoseg>
+                            
+                <Telefon>+36/70 987 4561</Telefon>
+                            
+                <Email>lakatosandras@gmail.com</Email>
+                        
+            </Elerhetoseg>
+                    
+            <Kezeles KID="04">
+                            
+                <Kezdes>2025-04-01</Kezdes>
+                            
+                <Vege>2025-09-01</Vege>
+                        
+            </Kezeles>
+                
+        </Orvos>
+        
+    </Orvosok>
+        
+    <!-- Az alábbiakban négy páciens adatai következnek -->
+        
+    <Paciensek>
+                
+        <Paciens PID="01">
+                        
+            <Nev>Vörös Tibor</Nev>
+                        
+            <SzuletesiDatum>1991-01-01</SzuletesiDatum>
+                        
+            <Cim>
+                                
+                <Varos>Miskolc</Varos>
+                                
+                <Utca>Petőfi Sándor utca</Utca>
+                                
+                <Hazszam>1</Hazszam>
+                            
+            </Cim>
+                        
+            <Telefonszamok>
+                                
+                <Telefonszam>+36/20 456 7817</Telefonszam>
+                                
+                <Telefonszam>+36/30 456 7822</Telefonszam>
+                            
+            </Telefonszamok>
+                    
+        </Paciens>
+                
+        <Paciens PID="02">
+                        
+            <Nev>Kovács Nándor</Nev>
+                        
+            <SzuletesiDatum>1992-01-01</SzuletesiDatum>
+                        
+            <Cim>
+                                
+                <Varos>Miskolc</Varos>
+                                
+                <Utca>Győri kapu</Utca>
+                                
+                <Hazszam>2</Hazszam>
+                            
+            </Cim>
+                        
+            <Telefonszamok>
+                                
+                <Telefonszam>+36/20 456 7831</Telefonszam>
+                            
+            </Telefonszamok>
+                    
+        </Paciens>
+                
+        <Paciens PID="03">
+                        
+            <Nev>Bence Károly</Nev>
+                        
+            <SzuletesiDatum>1993-01-01</SzuletesiDatum>
+                        
+            <Cim>
+                                
+                <Varos>Felsőzsolca</Varos>
+                                
+                <Utca>József Attila utca</Utca>
+                                
+                <Hazszam>3</Hazszam>
+                            
+            </Cim>
+                        
+            <Telefonszamok>
+                                
+                <Telefonszam>+36/20 456 1785</Telefonszam>
+                                
+                <Telefonszam>+36/70 456 2786</Telefonszam>
+                            
+                <Telefonszam>+36/70 154 3441</Telefonszam>
+            </Telefonszamok>
+                    
+        </Paciens>
+                
+        <Paciens PID="04">
+                        
+            <Nev>Kertész Péter</Nev>
+                        
+            <SzuletesiDatum>1994-01-01</SzuletesiDatum>
+                        
+            <Cim>
+                                
+                <Varos>Szeged</Varos>
+                                
+                <Utca>Rákóczi utca</Utca>
+                                
+                <Hazszam>4</Hazszam>
+                            
+            </Cim>
+                        
+            <Telefonszamok>
+                                
+                <Telefonszam>+36/70 456 7854</Telefonszam>
+                                
+                <Telefonszam>+36/30 456 7865</Telefonszam>
+                            
+            </Telefonszamok>
+                    
+        </Paciens>
+            
+    </Paciensek>
+        
+    <!-- Az alábbiakban négy vizsgálat adatai következnek -->
+        
+    <Vizsgalatok>
+            
+        <Vizsgalat VID="01">
+                    
+            <Tipus>Laborvizsgálat</Tipus>
+                    
+            <Datum>2025-01-15</Datum>
+                    
+            <Diagnozis>Vérkép elemzés</Diagnozis>
+                
+        </Vizsgalat>
+            
+        <Vizsgalat VID="02">
+                    
+            <Tipus>Röntgenvizsgálat</Tipus>
+                    
+            <Datum>2025-02-15</Datum>
+                    
+            <Diagnozis>Mellkas röntgen</Diagnozis>
+                
+        </Vizsgalat>
+            
+        <Vizsgalat VID="03">
+                    
+            <Tipus>Ultrahang vizsgálat</Tipus>
+                    
+            <Datum>2025-03-15</Datum>
+                    
+            <Diagnozis>Hasüreg ultrahang</Diagnozis>
+                
+        </Vizsgalat>
+            
+        <Vizsgalat VID="04">
+                    
+            <Tipus>Kardiológiai vizsgálat</Tipus>
+                    
+            <Datum>2025-05-01</Datum>
+                    
+            <Diagnozis>Ekg vizsgálat</Diagnozis>
+                
+        </Vizsgalat>
+        
+    </Vizsgalatok>
+        
+    <!-- Az alábbiakban négy időpont adatai következnek -->
+        
+    <Idopontok>
+            
+        <Idopont IID="01">
+                    
+            <Helyszin>MÁV Rendelőintézet</Helyszin>
+                    
+            <Datum>2024-12-10</Datum>
+                    
+            <Ido>09:00</Ido>
+                
+        </Idopont>
+            
+        <Idopont IID="02">
+                    
+            <Helyszin>BAZ Vármegyei Központi Kórház</Helyszin>
+                    
+            <Datum>2024-12-12</Datum>
+                    
+            <Ido>10:30</Ido>
+                
+        </Idopont>
+            
+        <Idopont IID="03">
+                    
+            <Helyszin>MÁV Rendelőintézet</Helyszin>
+                    
+            <Datum>2024-12-15</Datum>
+                    
+            <Ido>14:00</Ido>
+                
+        </Idopont>
+            
+        <Idopont IID="04">
+                    
+            <Helyszin>BAZ Vármegyei Központi Kórház</Helyszin>
+                    
+            <Datum>2024-12-18</Datum>
+                    
+            <Ido>11:45</Ido>
+                
+        </Idopont>
+        
+    </Idopontok>
+        
+    <!-- Az alábbiakban négy gyógyszer adatai következnek -->
+        
+    <Gyogyszerek>
+            
+        <Gyogyszer GID="01">
+                    
+            <Nev>Ibuprofen</Nev>
+                    
+            <Adagolas>200-400 mg naponta 3-4 alkalommal</Adagolas>
+                    
+            <Leiras>Az ibuprofen egy nem szteroid gyulladáscsökkentő gyógyszer (NSAID), amelyet fájdalom és gyulladás csökkentésére használnak.</Leiras>
+                    
+            <Mellekhatasok>
+                            
+                <Mellekhatas>Fejfájás, szédülés, gyomorpanaszok, hányinger</Mellekhatas>
+                        
+            </Mellekhatasok>
+                
+        </Gyogyszer>
+            
+        <Gyogyszer GID="02">
+                    
+            <Nev>Aspirin</Nev>
+                    
+            <Adagolas>75-100 mg naponta egyszer</Adagolas>
+                    
+            <Leiras>Az aszpirin egy nem szteroid gyulladáscsökkentő gyógyszer, amelyet főként a szív- és érrendszeri betegségek megelőzésére és kezelésére használnak.</Leiras>
+                    
+            <Mellekhatasok>
+                            
+                <Mellekhatas>Gyomorirritáció, hányinger, vérzés</Mellekhatas>
+                            
+                <Mellekhatas>Allergiás reakciók, bőrkiütés</Mellekhatas>
+                        
+            </Mellekhatasok>
+                
+        </Gyogyszer>
+            
+        <Gyogyszer GID="03">
+                    
+            <Nev>Paracetamol</Nev>
+                    
+            <Adagolas>500-1000 mg naponta 3-4 alkalommal, maximum 4000 mg/nap</Adagolas>
+                    
+            <Leiras>Paracetamol egy fájdalomcsillapító és lázcsillapító szer, amelyet enyhe és közepes erősségű fájdalom kezelésére használnak.</Leiras>
+                    
+            <Mellekhatasok>
+                            
+                <Mellekhatas>Szédülés, hányinger, bélpanaszok</Mellekhatas>
+                            
+                <Mellekhatas>Allergiás reakciók, kiütések</Mellekhatas>
+                            
+                <Mellekhatas>Májműködési zavarok (túladagolás esetén)</Mellekhatas>
+                        
+            </Mellekhatasok>
+                
+        </Gyogyszer>
+            
+        <Gyogyszer GID="04">
+                    
+            <Nev>Amoxicillin</Nev>
+                    
+            <Adagolas>250-500 mg 8 óránként</Adagolas>
+                    
+            <Leiras>Az amoxicillin egy széles spektrumú antibiotikum, amelyet bakteriális fertőzések kezelésére használnak.</Leiras>
+                    
+            <Mellekhatasok>
+                            
+                <Mellekhatas>Hasmenés, hányinger, bélflóra felborulás</Mellekhatas>
+                            
+                <Mellekhatas>Allergiás reakciók, bőrkiütés</Mellekhatas>
+                            
+                <Mellekhatas>Gombás fertőzések (pl. szájpenész)</Mellekhatas>
+                            
+                <Mellekhatas>Vérképzőszervi elváltozások, mint pl. leukopenia</Mellekhatas>
+                        
+            </Mellekhatasok>
+                
+        </Gyogyszer>
+        
+        <Gyogyszer GID="05">
+            <Nev>Diclofenac</Nev>
+            <Adagolas>50 mg naponta 2-3 alkalommal</Adagolas>
+            <Leiras>Gyulladáscsökkentő gyógyszer, amely az izomfájdalmak enyhítésére szolgál.</Leiras>
+            <Mellekhatasok>
+                <Mellekhatas>Gyomorpanaszok, fejfájás</Mellekhatas>
+            </Mellekhatasok>
+        </Gyogyszer>
+    </Gyogyszerek>
+    
+</Rendelo>

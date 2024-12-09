@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Az alábbiakban egyedi típusok definiálása -->
+    <xs:element name="Rendelo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Orvosok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Orvos" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Nev" type="xs:string"/>
+                                        <xs:element name="Szakterulet" type="xs:string"/>
+                                        <xs:element name="Elerhetoseg">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Telefon" type="PhoneNumber"/>
+                                                    <xs:element name="Email" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Kezeles" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Kezdes" type="xs:date"/>
+                                                    <xs:element name="Vege" type="xs:date"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="KID" type="xs:int" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="OID" type="xs:int" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="Paciensek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Paciens" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Nev" type="xs:string"/>
+                                        <xs:element name="SzuletesiDatum" type="xs:date"/>
+                                        <xs:element name="Cim">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Varos" type="xs:string"/>
+                                                    <xs:element name="Utca" type="xs:string"/>
+                                                    <xs:element name="Hazszam" type="xs:int"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Telefonszamok">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Telefonszam" type="PhoneNumber" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="PID" type="xs:int" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Vizsgalatok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Vizsgalat" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Tipus" type="xs:string"/>
+                                        <xs:element name="Datum" type="xs:date"/>
+                                        <xs:element name="Diagnozis" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="VID" type="xs:int" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Idopontok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Idopont" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Helyszin" type="xs:string"/>
+                                        <xs:element name="Datum" type="xs:date"/>
+                                        <xs:element name="Ido" type="Appointment"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="IID" type="xs:int" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Gyogyszerek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Gyogyszer" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Nev" type="xs:string"/>
+                                        <xs:element name="Adagolas" type="xs:string"/>
+                                        <xs:element name="Leiras" type="xs:string"/>
+                                        <xs:element name="Mellekhatasok">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Mellekhatas" type="xs:string" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="GID" type="xs:int" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="Orvos_key">
+            <xs:selector xpath="Orvos"/>
+            <xs:field xpath="@OID"/>
+        </xs:key>
+        <xs:key name="Paciens_key">
+            <xs:selector xpath="Paciens"/>
+            <xs:field xpath="@PID"/>
+        </xs:key>
+        <xs:key name="Vizsgalat_key">
+            <xs:selector xpath="Vizsgalat"/>
+            <xs:field xpath="@VID"/>
+        </xs:key>
+        <xs:key name="Idopont_key">
+            <xs:selector xpath="Idopont"/>
+            <xs:field xpath="@IID"/>
+        </xs:key>
+        <xs:key name="Gyogyszer_key">
+            <xs:selector xpath="Gyogyszer"/>
+            <xs:field xpath="@GID"/>
+        </xs:key>
+        <xs:key name="Kezeles_key">
+            <xs:selector xpath="Kezeles"/>
+            <xs:field xpath="@KID"/>
+        </xs:key>
+        <xs:keyref name="FK_Kezeles_Paciens" refer="Paciens_key">
+            <xs:selector xpath="Kezeles"/>
+            <xs:field xpath="@PID"/>
+        </xs:keyref>
+    </xs:element>
+<xs:simpleType name="PhoneNumber">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\+36/\d{2} \d{3} \d{4}"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="Appointment">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\d{2}:\d{2}"/>
+    </xs:restriction>
+</xs:simpleType>
+</xs:schema>
